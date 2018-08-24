@@ -1,0 +1,84 @@
+html{	background-color: #EEE9E8;}
+nav{	font-weight: bold;	color:gray;}
+.iconLogo{	height: 50px;}
+.iconCar{	width: 30px;	height: 30px;}
+.menu1, .menu3{	width: 35%;}
+.menu1, .menu2{	float: left;}
+.menu2{	text-align: center;	width: 20%;}
+nav ul li{	float: left;	margin-left: 20px;cursor:pointer;}
+nav ul li:hover{ color: blue;}
+ul li{	text-decoration: none;    list-style-type: none;}
+.menu3{	float: right;}
+.clear{	clear: both;}
+.menuOculto{	display: none;}
+.verMas{	cursor: pointer;	font-size: 20px;}
+.verMas:hover{	color:red;}
+	.visibleDesktop{
+		display:block;
+	}
+	.visibleMobile{
+		display:none;
+	}
+
+
+@media screen and (max-width: 1230px) {
+
+	.menu1{	width: 30%;}
+	.menu3{	width: 50%;}
+	.menu2{	width: 15%;}
+}
+
+@media screen and (max-width: 950px) {
+
+	.iconLogo{	height: 40px;}
+	.menu1{	width: 30%;}
+	.menu3{	width: 55%;}
+	.menu2{	width: 10%;}
+	
+}
+
+
+@media screen and (max-width: 600px) {
+
+	.visibleDesktop{
+		display:none;
+	}
+	.visibleMobile{
+		display:block;
+	}
+	.menu1, .menu3{	width: 30%;}
+	.contenidoMenu ul li{
+		float: none !important;
+		
+	}
+	.navMobile .contenidoMenu{
+		position: relative;
+		width: 100%;
+		text-align: center;
+		top: 80px;
+	}
+	.navMobile .contenidoMenu .menu1{
+		position: absolute;
+		width: 100%;
+	}
+	.navMobile .contenidoMenu ul li{
+		margin-left: -40px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+
+	.visibleDesktop{
+		display:none;
+	}
+	.visibleMobile{
+		display:block;
+	}
+	.menu1, .menu3{	width: 20%;}
+	.iconCar{	width: 10px;	height: 10px;}
+
+	ul li{
+		float: none;
+		background-color: red;
+	}
+}
